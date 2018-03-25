@@ -1,0 +1,15 @@
+﻿@{ 
+    ViewBag.Title = "Use Other Partial View";
+}
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#btn').click(function () {
+            $('#result').load('/Welcome/ShowEvents');
+        });
+    });
+</script>
+<h2>Use Other Partial View</h2>
+<div>This is the main view.</div>
+<input type="button" id="btn" value="Show Events" />
+<div id="result"></div>

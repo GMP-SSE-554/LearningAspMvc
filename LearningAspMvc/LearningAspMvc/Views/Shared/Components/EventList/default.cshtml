@@ -1,0 +1,10 @@
+﻿@using TadLearningAspMvc.Models;
+@model IEnumerable<Display>
+
+<h3>Event Calendar</h3>
+<ul>
+    @foreach (var e in Model)
+    {
+        <li><div>@e.Date.ToString("D")</div><div>@e.Text</div></li>
+    }
+</ul>

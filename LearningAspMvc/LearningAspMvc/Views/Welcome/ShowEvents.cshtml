@@ -1,0 +1,12 @@
+﻿@using TadLearningAspMvc.Models
+@model IEnumerable<Display>
+<h2>@ViewBag.EventsTitle</h2>
+<table>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Date.ToShortDateString()</td>
+            <td>@item.Text</td>
+        </tr>
+    }
+</table>

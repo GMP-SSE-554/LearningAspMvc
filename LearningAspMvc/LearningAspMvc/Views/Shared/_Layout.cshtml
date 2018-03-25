@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <environment names="Development">
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment names="Staging,Production" >
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>The Layout Header</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a asp-controller="Welcome" asp-action="SimpleLayout">Simple Layout</a></li>
+                <li><a asp-controller="Welcome" asp-action="SectionLayout">Section Layout</a></li>
+            </ul>
+        </nav>
+        <div>
+            @RenderSection("PageNavigation", required: false)
+        </div>
+        <div>
+            @RenderBody()
+        </div>
+        <hr />
+        <footer>
+            <p>
+                <div>A demonstration of layouts.</div>
+                @DateTime.Now.Year - Tad McCorkle
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

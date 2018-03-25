@@ -1,0 +1,22 @@
+﻿@using TadLearningAspMvc.Models
+@model IEnumerable<Display>
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <tile>PassModel</tile>
+</head>
+<body>
+    <div>
+        <ul>
+            @foreach (var item in Model)
+            {
+                <li>@item.Text</li>
+            }
+        </ul>
+    </div>
+</body>
+</html>

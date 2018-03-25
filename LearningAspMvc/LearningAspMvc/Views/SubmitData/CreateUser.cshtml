@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Create User";
+}
+
+<h2>Create User</h2>
+<form action="/SubmitData/CreateUser" method="post">
+    <fieldset>
+        <legend>User</legend>
+        <div>First Name:</div>
+        <input name="firstName" />
+        <div>Last Name:</div>
+        <input name="lastName" />
+        <div>Username:</div>
+        <input name="username" />
+        <div>Password:</div>
+        <input name="password" />
+        <div>State:</div>
+        <input name="state" />
+        <div>Zip Code:</div>
+        <input name="zipCode" />
+        <div></div>
+        <hr />
+        <button type="submit">Submit</button>
+    </fieldset>
+</form>

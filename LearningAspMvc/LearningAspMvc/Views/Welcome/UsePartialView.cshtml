@@ -1,0 +1,10 @@
+﻿@model TadLearningAspMvc.Models.EventAndMenuContext
+@{ 
+    ViewBag.Title = "Use Partial View";
+    ViewBag.EventsTitle = "Live Events";
+}
+<h2>Use Partial View</h2>
+<div>This is the main view.</div>
+<div>
+    @await Html.PartialAsync("ShowEvents", Model.Events)
+</div>
