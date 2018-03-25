@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace TadLearningAspMvc.Models
+namespace LearningAspMvc.Models
 {
     public class EventAndMenuContext
     {

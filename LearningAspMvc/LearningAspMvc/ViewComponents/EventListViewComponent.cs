@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using TadLearningAspMvc.Models;
+using LearningAspMvc.Models;
 
-namespace TadLearningAspMvc.ViewComponents
+namespace LearningAspMvc.ViewComponents
 {
     public class EventListViewComponent : ViewComponent
     {

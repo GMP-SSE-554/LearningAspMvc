@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TadLearningAspMvc.Models
+namespace LearningAspMvc.Models
 {
     public class Display
     {

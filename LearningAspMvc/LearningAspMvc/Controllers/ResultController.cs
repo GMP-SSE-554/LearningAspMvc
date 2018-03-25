@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System;
-using TadLearningAspMvc.Models;
+using LearningAspMvc.Models;
 
-namespace TadLearningAspMvc.Controllers
+namespace LearningAspMvc.Controllers
 {
     public class ResultController : Controller
     {

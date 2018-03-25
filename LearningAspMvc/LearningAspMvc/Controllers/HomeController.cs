@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Text.Encodings.Web;
 
-namespace TadLearningAspMvc.Controllers
+namespace LearningAspMvc.Controllers
 {
     public class HomeController : Controller
     {

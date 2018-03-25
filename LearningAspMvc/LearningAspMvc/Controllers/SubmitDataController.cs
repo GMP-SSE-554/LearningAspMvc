@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using TadLearningAspMvc.Models;
+using LearningAspMvc.Models;
 
-namespace TadLearningAspMvc.Controllers
+namespace LearningAspMvc.Controllers
 {
     public class SubmitDataController : Controller
     {

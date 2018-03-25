@@ -3,9 +3,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using TadLearningAspMvc.Models;
+using LearningAspMvc.Models;
 
-namespace TadLearningAspMvc
+namespace LearningAspMvc
 {
     public class Startup
     {
@@ -38,11 +38,6 @@ namespace TadLearningAspMvc
                     name: "default",
                     template: "{controller}/{action}/{id?}",
                     defaults: new { controller = "Home", action = "Index" }
-                ).MapRoute(
-                    name: "personal",
-                    template: "{personal}/{conntroller}/{action}/{id?}",
-                    defaults: new { controller = "Home", action = "Index" },
-                    constraints: new { personal = @"(tad)|(chris)" }
                 ).MapRoute(
                     name: "personalId",
                     template: "{controller}/{action}/{personalId?}",

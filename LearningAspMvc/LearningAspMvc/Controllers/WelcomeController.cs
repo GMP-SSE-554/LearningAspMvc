@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
-using TadLearningAspMvc.Models;
+using LearningAspMvc.Models;
 
-namespace TadLearningAspMvc.Controllers
+namespace LearningAspMvc.Controllers
 {
     public class WelcomeController : Controller
     {

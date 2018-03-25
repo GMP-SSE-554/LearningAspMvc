@@ -1,5 +1,5 @@
 ﻿
-namespace TadLearningAspMvc.Models
+namespace LearningAspMvc.Models
 {
     public class User
     {
