@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Choose Photo";
+}
+
+<h2>@ViewBag.Title</h2>
+<form action="/SubmitData/GoToSelectedPhoto" method="post">
+    <fieldset>
+        <legend>Photo</legend>
+        <div>Photo Name:</div>
+        <input name="photoName" />
+        <hr />
+        <button type="submit">Submit</button>
+    </fieldset>
+</form>
