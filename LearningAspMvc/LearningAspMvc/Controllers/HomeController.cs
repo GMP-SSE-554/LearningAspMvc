@@ -6,12 +6,6 @@ namespace LearningAspMvc.Controllers
     public class HomeController : Controller
     {
         /// <summary>
-        /// Indexes this instance.
-        /// </summary>
-        /// <returns></returns>
-        public IActionResult Index() => View();
-
-        /// <summary>
         /// Gets the default greeting.
         /// </summary>
         /// <returns></returns>

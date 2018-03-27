@@ -7,12 +7,6 @@ namespace LearningAspMvc.Controllers
     public class ResultController : Controller
     {
         /// <summary>
-        /// Indexes this instance.
-        /// </summary>
-        /// <returns></returns>
-        public IActionResult Index() => View();
-
-        /// <summary>
         /// Gets the default text result.
         /// </summary>
         /// <returns></returns>
@@ -34,12 +28,13 @@ namespace LearningAspMvc.Controllers
         /// Goes to default greeting.
         /// </summary>
         /// <returns></returns>
-        public IActionResult GoToRoute() => RedirectToRoute(new { controller = "Home", action = "Greeting" });
+        public IActionResult GoToRoute() => 
+            RedirectToRoute(new { controller = "Home", action = "Greeting" });
 
         /// <summary>
         /// Pulls up the cardinal image.
         /// </summary>
         /// <returns></returns>
-        public IActionResult Cardinal() => File("~Images/DSC_0050.jpg", "image/jpeg");
+        public IActionResult Cardinal() => File("~/Images/DSC_0050.jpg", "image/jpeg");
     }
 }

@@ -16,12 +16,9 @@
         <header>
             <h1>The Layout Header</h1>
         </header>
-        <nav>
-            <ul>
-                <li><a asp-controller="Welcome" asp-action="SimpleLayout">Simple Layout</a></li>
-                <li><a asp-controller="Welcome" asp-action="SectionLayout">Section Layout</a></li>
-            </ul>
-        </nav>
+        <p>
+            This is the default layout.
+        </p>
         <div>
             @RenderSection("PageNavigation", required: false)
         </div>

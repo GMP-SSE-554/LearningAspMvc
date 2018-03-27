@@ -31,29 +31,5 @@ namespace LearningAspMvc.Models
                 });
             }
         }
-
-        /// <summary>
-        /// The menus
-        /// </summary>
-        IEnumerable<Display> menus = null;
-        public IEnumerable<Display> Menus
-        {
-            get
-            {
-                return menus ?? (menus = new List<Display>()
-                {
-                    new Display
-                    {
-                        Id = 1,
-                        Text = "Corn",
-                    },
-                    new Display
-                    {
-                        Id = 2,
-                        Text = "Steak"
-                    }
-                });
-            }
-        }
     }
 }

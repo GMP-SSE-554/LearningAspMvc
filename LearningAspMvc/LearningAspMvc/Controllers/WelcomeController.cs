@@ -25,6 +25,12 @@ namespace LearningAspMvc.Controllers
         public IActionResult Index() => View();
 
         /// <summary>
+        /// Shows the default layout.
+        /// </summary>
+        /// <returns></returns>
+        public IActionResult ShowDefaultLayout() => View();
+
+        /// <summary>
         /// Uses the partial view.
         /// </summary>
         /// <returns></returns>
@@ -40,11 +46,11 @@ namespace LearningAspMvc.Controllers
         /// Shows the events.
         /// </summary>
         /// <returns></returns>
-        public IActionResult ShowEvents()
-        {
-            ViewBag.EventsTitle = "Live Events";
-            return PartialView(_context.Events);
-        }
+        //public IActionResult ShowEvents()
+        //{
+        //    ViewBag.EventsTitle = "Live Events";
+        //    return PartialView(_context.Events);
+        //}
 
         /// <summary>
         /// Passes the data.
